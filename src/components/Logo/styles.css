@@ -1,0 +1,21 @@
+.header{
+    display:inline-block;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+
+    position: fixed;
+    left: 2rem;
+    top: 2rem;
+    
+    margin: 0;
+    z-index: 3;
+    line-height: 1.15;
+}
+
+.lightHeader{
+    color: #FCF6F4;
+}
+
+.darkHeader{
+    color: #000000;
+}

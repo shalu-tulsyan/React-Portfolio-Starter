@@ -1,0 +1,18 @@
+.workLink{
+    position: absolute;
+    top: 50%;
+    left: calc(1rem + 2vw);
+    transform: translate(-50%, -50%) rotate(-90deg) ;
+    text-decoration: none;
+    z-index: 1;
+    line-height: 1.15;
+}
+
+.workLightTheme{
+    color: #000000;
+}
+
+.workDarkTheme{
+    color:#FCF6F4;
+}
+

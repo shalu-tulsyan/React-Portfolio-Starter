@@ -1,0 +1,13 @@
+.aboutLink{
+    text-decoration: none;
+    z-index: 1;
+    
+}
+
+.aboutLightTheme{
+    color: #FCF6F4;
+}
+
+.aboutDarkTheme{
+    color: #000000;
+}

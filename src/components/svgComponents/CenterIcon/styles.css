@@ -1,0 +1,43 @@
+.centerIconContainer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+
+    cursor: pointer;
+
+    padding: 0;
+
+}
+
+.centerIconContainerClicked{
+    top: 85%;
+    left: 92%;
+}
+
+.centerIconContainer>:first-child{
+    animation: rotate infinite 1.5s linear;   
+}
+
+.spanContainer{
+    padding-top: 1rem;
+}
+
+.spanContainerClicked{
+    display: none;
+}
+
+@keyframes rotate{
+    from{ transform: rotate(0); }
+    to{ transform: rotate(360deg); }
+} 

@@ -1,0 +1,22 @@
+.lineContainer{
+    background: black;
+    border: 1px solid white;
+
+    animation: play 1s ease infinite;
+
+    height: 1rem;
+    width: 2px;
+    margin: 0 0.1rem;
+}
+
+@keyframes play{
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(2);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}

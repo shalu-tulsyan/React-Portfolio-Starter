@@ -1,0 +1,33 @@
+.mainContainer{
+    background: rgb(252, 246, 244);
+    width: 100vw;
+    height: 100vh;
+
+   overflow: hidden;
+
+    position: relative;
+
+}
+
+.contentContainer{
+    padding: 2rem;
+}
+
+.animationContainer{
+    display: flex;
+    cursor: pointer;
+    position: fixed;
+    left: 8rem;
+    top: 3rem;
+    z-index: 10;
+}
+
+.animation{
+    background: rgb(0,0,0);
+    border: 1px solid rgb(252, 246,244);
+    animation: 1s ease 0s infinite normal none running XVYGD;
+    height: 1rem;
+    width : 2px;
+    margin: 0px 0.1 rem;
+}
+
