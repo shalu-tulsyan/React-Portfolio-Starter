@@ -9,6 +9,7 @@ import spaceman from '../../assets/images/spaceman.png';
 import { AboutText } from '../../data/about';
 import BackgroundText from '../../components/BackgroundText';
 import { motion } from 'framer-motion';
+import configDark from '../../config/particles-dark-config.json';
 
 const aboutText={
   hidden: {opacity: 0},
@@ -33,7 +34,7 @@ export default function About() {
         <LogoComponent />
         <PowerOff />
         <SocialIcons />
-        <DarkParticlesComponent />
+        <DarkParticlesComponent configDark={configDark} />
         <div className="spacemanContainer">
           <img  src={spaceman} alt="spaceman" />
         </div>

@@ -10,6 +10,7 @@ import BackgroundText from '../../components/BackgroundText';
 import { motion } from 'framer-motion';
 import DesignerComponent from '../../components/SkillsComponent/Designer';
 import FrontEndComponent from '../../components/SkillsComponent/FrontEnd';
+import configLight from '../../config/particles-light-config.json'
 
 export default function MySkills() {
     return (
@@ -17,7 +18,7 @@ export default function MySkills() {
         <LogoComponent />
         <PowerOff />
         <SocialIcons />
-        <LightParticlesComponent />
+        <LightParticlesComponent configLight={configLight} />
         <DesignerComponent />
         <FrontEndComponent />
         <BackgroundText text="SKILLS" top="80%" right="30%" color="rgba(0, 0, 0, 0.1)" />

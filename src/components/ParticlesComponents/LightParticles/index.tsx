@@ -1,9 +1,8 @@
 import React from 'react';
 import Particles from "react-tsparticles";
 import '../../ParticlesComponents/styles.css';
-import configLight from '../../../config/particles-light-config.json';
 
-export default function LightParticlesComponent(){
+export default function LightParticlesComponent({configLight}: any){
     return(
         <div className="particlesContainer">
             <Particles  options={configLight} />
