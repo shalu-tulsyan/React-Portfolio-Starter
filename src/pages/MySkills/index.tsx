@@ -1,7 +1,5 @@
 import React from 'react';
-import LaptopCode from '../../components/svgComponents/laptop-code';
 import './styles.css';
-import { Designer, FrontEnd } from '../../data/SkillsDescription';
 import LogoComponent from '../../components/Logo';
 import PowerOff from '../../components/svgComponents/Power-Off';
 import SocialIcons from '../../components/SocialIcons';
