@@ -1,0 +1,56 @@
+.skillsWrapper{
+    border: 2px solid #000000;
+    color: #000000;
+    background-color: #FCF6F4;
+    padding: 2rem;
+    width: 30vw;
+    height: 60vh;
+    z-index: 3;
+    line-height: 1.5;
+    font-family: 'Ubuntu Mono', monospace;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skillsWrapper:hover{
+    color: #FCF6F4 ;
+    background-color: #000000 ;
+}
+
+.titleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(1em + 1vw);
+}
+
+.titleContainer>*:first-child{
+    margin-right: 1rem;
+}
+
+.skillsWrapper:hover .titleContainer>*{
+    fill: #FCF6F4;
+}
+
+.descriptionContainer{
+    color: #000000;
+    font-size: calc(0.6rem + 1vw);
+    padding:0.5rem 0; 
+}
+
+.skillsWrapper:hover .descriptionContainer{
+    color: #FCF6F4 ;
+}
+
+strong{
+    margin-bottom: 1rem;
+}
+
+ul, p{
+    margin:0 0 0 2rem;
+    padding: 0;
+
+}

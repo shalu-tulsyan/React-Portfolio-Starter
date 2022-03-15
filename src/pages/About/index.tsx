@@ -8,6 +8,18 @@ import { ThemedContext, ThemeType } from '../../constants/themes';
 import spaceman from '../../assets/images/spaceman.png';
 import { AboutText } from '../../data/about';
 import BackgroundText from '../../components/BackgroundText';
+import { motion } from 'framer-motion';
+
+const aboutText={
+  hidden: {opacity: 0},
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      delay: 1.2
+    }
+  }
+}
 
 export default function About() {
 
@@ -17,7 +29,7 @@ export default function About() {
 
   return (
     <ThemedContext.Provider  value={{theme,changeTheme}}>
-      <div className="aboutContainer">
+      <motion.div  exit={{opacity:0, transition: {duration: 0.5}}} className="aboutContainer">
         <LogoComponent />
         <PowerOff />
         <SocialIcons />
@@ -25,13 +37,13 @@ export default function About() {
         <div className="spacemanContainer">
           <img  src={spaceman} alt="spaceman" />
         </div>
-        <div className="detailsTextContainer">
+        <motion.div variants={aboutText} initial="hidden" animate="show" className="detailsTextContainer">
           {AboutText.map((data,index)=>{
           return <>   {data } {index < 2 ?<> <br/><br/> </> :null}  </>
           })}
-        </div>
+        </motion.div>
         <BackgroundText text="ABOUT" top="10%" left="5%" color="rgba(252, 246, 244, 0.1)" />
-      </div>
+      </motion.div>
     </ThemedContext.Provider>
   );
 }

@@ -44,20 +44,20 @@ export default function Work() {
 
   return (
     <ThemedContext.Provider  value={{theme,changeTheme}}>
-      <div className="workContainer">
+      <motion.div variants={container} initial="hidden" animate="show"  exit={{opacity:0, transition: {duration: 0.7}}} className="workContainer">
         <LogoComponent />
         <PowerOff />
         <SocialIcons />
-        <motion.ul  variants={container} initial="hidden" animate="show" ref={ref} className="listContainer">
+        <ul ref={ref} className="listContainer">
           {WorkData.map((data)=>{
             return <Card key={data.id} data={data} />
           })}
-        </motion.ul>
+        </ul>
         <BackgroundText text="WORK" top="10%" right="20%" color="rgba(252, 246, 244, 0.1)" />
         <span ref={yinyangRef} className="rotateSvg">
           <YinYang height={80} width={80} fill="white" />
         </span>
-      </div>
+      </motion.div>
     </ThemedContext.Provider>
   );
 }
