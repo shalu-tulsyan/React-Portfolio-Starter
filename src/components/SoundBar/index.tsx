@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import music from '../../assets/audio/u-said-it-v13-1167.mp3';
 import Line from './Line';
 import './styles.css';
 
@@ -22,7 +21,7 @@ export default function SoundBar(){
             <Line click={click} />
             <Line click={click} />
             <Line click={click} />
-            <audio src={music} ref={ref} loop />
+            <audio src="https://react-portfolio-sigma.vercel.app/static/media/u-said-it-v13-1167.949cee7e.mp3" ref={ref} loop />
         </div>
     );
 }
